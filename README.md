@@ -1,4 +1,4 @@
-# La Data Science Pour Les Nuls Par Un Nul 
+# La Data Science pour les Nuls par un Nul 
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
