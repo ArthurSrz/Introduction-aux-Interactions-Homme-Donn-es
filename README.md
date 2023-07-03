@@ -14,8 +14,10 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
-![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](./images/les-bronzés-font-du-ski-vas-y.gif)
+![Alt Text](https://media.giphy.com/media/2XskdWAPOcE7dMn9Dz2/giphy.gif)
 
+
+https://lottiefiles.com/148509-bubble-typography
 ## Pedagogy
 
 We have chosen two pedagogical tenets while building this curriculum: ensuring that it is project-based and that it includes frequent quizzes. By the end of this series, students will have learned basic principles of data science, including ethical concepts, data preparation, different ways of working with data, data visualization, data analysis, real-world use cases of data science, and more.
