@@ -1,5 +1,5 @@
 # La Data Science pour les Nuls par un Nul 
-## Introduction aux méthodes statistiques d'analyse de données
+### Introduction aux méthodes statistiques d'analyse de données
 
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
