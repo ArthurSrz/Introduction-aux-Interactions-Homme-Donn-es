@@ -60,7 +60,11 @@ Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et
 Pour bidouiller, rien de plus simple, il te suffit de suivre le tuto ⬇️
 
 
-https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/assets/55806298/f163f506-82ae-440d-88bc-d6b599e92b0c
+
+
+https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/assets/55806298/86a75e93-9fe2-4801-994f-9256a8057997
+
+
 
 
 
