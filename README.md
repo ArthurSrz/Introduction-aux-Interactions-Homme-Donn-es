@@ -1,5 +1,4 @@
-# La Data Science par un Nul pour les Nuls 
-### Introduction aux méthodes statistiques d'analyse de données
+# La Data Science par un Nul pour les Nuls : une introduction aux méthodes d'analyses de données
 
 
 Ce cours est né d'une citation d'**Alan Turing** prise (un peu trop) à la lettre :
