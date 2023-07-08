@@ -63,36 +63,5 @@ Follow these steps to open this sample in a Codespace:
 2. Select + New codespace at the bottom on the pane.
 For more info, check out the [GitHub documentation](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace).
 
-## VSCode Remote - Containers
-Follow these steps to open this repo in a container using your local machine and VSCode using  the VS Code Remote - Containers extension:
 
-1. If this is your first time using a development container, please ensure your system meets the pre-reqs (i.e. have Docker installed) in [the getting started documentation](https://code.visualstudio.com/docs/devcontainers/containers#_getting-started).
 
-To use this repository, you can either open the repository in an isolated Docker volume:
-
-**Note**: Under the hood, this will use the Remote-Containers: **Clone Repository in Container Volume...** command to clone the source code in a Docker volume instead of the local filesystem. [Volumes](https://docs.docker.com/storage/volumes/) are the preferred mechanism for persisting container data.
-
-Or open a locally cloned or downloaded version of the repository:
-
-- Clone this repository to your local filesystem.
-- Press F1 and select the **Remote-Containers: Open Folder in Container...** command.
-- Select the cloned copy of this folder, wait for the container to start, and try things out.
-
-## Offline access
-
-You can run this documentation offline by using [Docsify](https://docsify.js.org/#/). Fork this repo, [install Docsify](https://docsify.js.org/#/quickstart) on your local machine,  then in the root folder of this repo, type `docsify serve`. The website will be served on port 3000 on your localhost: `localhost:3000`.
-
-> Note, notebooks will not be rendered via Docsify, so when you need to run a notebook, do that separately in VS Code running a Python kernel.
-
-## Help Wanted!
-
-If you would like to translate all or part of the curriculum, please follow our [Translations](TRANSLATIONS.md) guide
-
-## Other Curricula
-
-Our team produces other curricula! Check out:
-
-- [Machine Learning for Beginners](https://aka.ms/ml-beginners)
-- [IoT for Beginners](https://aka.ms/iot-beginners)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners)
-- [AI for Beginners](https://aka.ms/ai-beginners)
