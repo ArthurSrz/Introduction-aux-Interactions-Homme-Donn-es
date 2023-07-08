@@ -58,7 +58,8 @@ Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et
 
 ### Espace de bidouille
 
-Pour bidouiller, rien de plus simple, il te suffit de clicker ici : 
+Pour bidouiller, rien de plus simple, il te suffit de clicker ici ⬇️
+
 [![Espace de bidouille](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
 
