@@ -24,7 +24,7 @@ Tu peux suivre ce cours de deux manières différentes :
 
 
 
-### Lire les leçons comme un polisson 
+#### Lire les leçons comme un polisson 
 
 Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et espièglerie, comme un polisson donc. Lisez en diagonale, en transversale mais surtout ne lisez pas comme un bon élève. Allez là où votre oeil vous guide. C'est, à notre sens, la meilleure manière de garder l'intérêt pour cette discipline parfois aride qu'est la science des données.
 
@@ -56,7 +56,7 @@ Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et
 | 19 | Data Science in the Cloud | [Cloud Data](5-Data-Science-In-Cloud/README.md) | Deploying models with Azure Machine Learning Studio. | [lesson](5-Data-Science-In-Cloud/19-Azure/README.md)| [Tiffany](https://twitter.com/TiffanySouterre) and [Maud](https://twitter.com/maudstweets) |
 | 20 | Data Science in the Wild | [In the Wild](6-Data-Science-In-Wild/README.md) | Data science driven projects in the real world. | [lesson](6-Data-Science-In-Wild/20-Real-World-Examples/README.md) | [Nitya](https://twitter.com/nitya) |
 
-### Espace de bidouille
+#### Espace de bidouille
 
 Follow these steps to open this sample in a Codespace:
 1. Click the Code drop-down menu and select the Open with Codespaces option.
