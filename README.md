@@ -58,10 +58,8 @@ Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et
 
 ### Espace de bidouille
 
-Follow these steps to open this sample in a Codespace:
-1. Click the Code drop-down menu and select the Open with Codespaces option.
-2. Select + New codespace at the bottom on the pane.
-For more info, check out the [GitHub documentation](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace).
+Pour bidouiller, rien de plus simple, il te suffit de clicker ici : 
+[![Espace de bidouille](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
 
 
