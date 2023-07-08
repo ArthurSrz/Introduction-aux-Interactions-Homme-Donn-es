@@ -1,43 +1,30 @@
-# La Data Science pour les Nuls par un Nul 
+# La Data Science par un Nul pour les Nuls 
 ### Introduction aux méthodes statistiques d'analyse de données
 
 
-Ce cours de Data science pour les Nuls par un Nul est un crash test. Un saut à ski réalisé par un bonhomme qui n'a jamais fait de saut à ski et qui espère retomber (miraculeusement) sur ses skis en bas du tremplin. 
+Ce cours est né d'une citation d'**Alan Turing** prise (un peu trop) à la lettre :
+> Ne t'inquiète pas si tu as des difficultés en data, je peux t'assurer que les miennes sont bien plus importantes !
 
-Va-t-il y arriver ? Seul vous pouvez-vous me le dire.
+En effet, pourquoi être inquiet alors qu'Alan Turing est bien nul que nous quand il s'agit de manipuler des données ? Il n'y a vraiment pas de quoi manger une 🍏
 
-[![Espace de bidouille](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
+Ce cours est fait pour toi si, comme moi, **tu as un syndrôme de l'imposteur quand on te parle de _data science_.** Le sujet te passione, tu peux en parler des heures mais au moment de mettre les mains dans le cambouis, ton rythme cardiaque monte à 220 et tu pers les pédales. 
 
+Ce cours, c'est un crash test. Il a été mené avec la même fougue qu'un monsieur n'ayant jamais fait de saut à ski et qui se lance pour la première fois. Il espère atterir sur ses skis tout en sachant que la situation la plus problable c'est celle-ci : 
 
 ![Alt Text](https://media.giphy.com/media/2XskdWAPOcE7dMn9Dz2/giphy.gif)
 
+## Comment suivre ce cours
+Tu peux suivre ce cours de deux manières différentes : 
+
+1.[En lisant les leçons à ton rythme](https://arthursrz.github.io/La-Data-Science-Pour-Les-Nuls/#/?id=lessons)
+
+2.En allant dans l'[Espace de Bidouille](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198) où tu pourras clicker partout (LA technique d'apprentissage) pour comprendre comment ça marche.
 
 
-## Pedagogy
 
-We have chosen two pedagogical tenets while building this curriculum: ensuring that it is project-based and that it includes frequent quizzes. By the end of this series, students will have learned basic principles of data science, including ethical concepts, data preparation, different ways of working with data, data visualization, data analysis, real-world use cases of data science, and more.
+## Lire les leçons comme un polisson 
 
-In addition, a low-stakes quiz before a class sets the intention of the student towards learning a topic, while a second quiz after class ensures further retention. This curriculum was designed to be flexible and fun and can be taken in whole or in part. The projects start small and become increasingly complex by the end of the 10 week cycle.
-
-> Find our [Code of Conduct](CODE_OF_CONDUCT.md), [Contributing](CONTRIBUTING.md),  [Translation](TRANSLATIONS.md) guidelines. We welcome your constructive feedback!
-
-## Each lesson includes:
-
-- Optional sketchnote
-- Optional supplemental video
-- Pre-lesson warmup quiz
-- Written lesson
-- For project-based lessons, step-by-step guides on how to build the project
-- Knowledge checks
-- A challenge
-- Supplemental reading
-- Assignment
-- Post-lesson quiz
-
-> **A note about quizzes**: All quizzes are contained [in this app](https://purple-hill-04aebfb03.1.azurestaticapps.net/), for 40 total quizzes of three questions each. They are linked from within the lessons, but the quiz app can be run locally; follow the instruction in the `quiz-app` folder. They are gradually being localized.
-
-## Lessons
-
+Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et espièglerie, comme un polisson donc. Lisez en diagonale, en transversale mais surtout ne lisez pas comme un bon élève. Allez là où votre oeil vous guide. C'est, à notre sens, la meilleure manière de garder l'intérêt pour cette discipline parfois aride qu'est la science des données.
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](./sketchnotes/00-Roadmap.png)|
 |:---:|
