@@ -16,19 +16,21 @@ Ce cours, c'est un crash test. Il a été mené avec la même fougue qu'un monsi
 ## Comment suivre ce cours
 Tu peux suivre ce cours de deux manières différentes : 
 
-1.[En lisant les leçons à ton rythme](https://arthursrz.github.io/La-Data-Science-Pour-Les-Nuls/#/?id=lessons)
+1.En lisant [les leçons](https://arthursrz.github.io/La-Data-Science-Pour-Les-Nuls/#/?id=lessons) comme un polisson.
 
-2.En allant dans l'[Espace de Bidouille](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198) où tu pourras clicker partout (LA technique d'apprentissage) pour comprendre comment ça marche.
+2.En allant dans l'Espace de Bidouille (voir le Github Codespace ⬇️) où tu pourras clicker partout (LA technique d'apprentissage) pour comprendre comment ça marche. 
+
+[![Espace de bidouille](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
 
 
-## Lire les leçons comme un polisson 
+### Lire les leçons comme un polisson 
 
 Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et espièglerie, comme un polisson donc. Lisez en diagonale, en transversale mais surtout ne lisez pas comme un bon élève. Allez là où votre oeil vous guide. C'est, à notre sens, la meilleure manière de garder l'intérêt pour cette discipline parfois aride qu'est la science des données.
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](./sketchnotes/00-Roadmap.png)|
 |:---:|
-| Data Science For Beginners: Roadmap - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
+| Data Science par un Nul: Roadmap - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
 
 
 | Lesson Number | Topic | Lesson Grouping | Learning Objectives | Linked Lesson | Author |
@@ -54,7 +56,7 @@ Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et
 | 19 | Data Science in the Cloud | [Cloud Data](5-Data-Science-In-Cloud/README.md) | Deploying models with Azure Machine Learning Studio. | [lesson](5-Data-Science-In-Cloud/19-Azure/README.md)| [Tiffany](https://twitter.com/TiffanySouterre) and [Maud](https://twitter.com/maudstweets) |
 | 20 | Data Science in the Wild | [In the Wild](6-Data-Science-In-Wild/README.md) | Data science driven projects in the real world. | [lesson](6-Data-Science-In-Wild/20-Real-World-Examples/README.md) | [Nitya](https://twitter.com/nitya) |
 
-## GitHub Codespaces
+### Espace de bidouille
 
 Follow these steps to open this sample in a Codespace:
 1. Click the Code drop-down menu and select the Open with Codespaces option.
