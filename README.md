@@ -59,7 +59,7 @@ Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et
 
 Pour bidouiller, rien de plus simple, il te suffit de ~~rentrer dans la matrice~~ suivre le tuto (en clickant ci-dessous) ⬇️
 
-[![Tuto](images/magic-data.gif)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
+[![Tuto](images/magic-data.gif)](https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/assets/55806298/9956edf5-89ce-4ea2-b759-f8ca416ddd97)
 
 
 Et de clicker ici pour ~~rentrer dans la matrice~~ mettre en application le tuto ⬇️
