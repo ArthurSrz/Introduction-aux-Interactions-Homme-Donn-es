@@ -35,6 +35,10 @@ Autrement dit, la data science c'est une science du relooking de l'information :
 Je vous emmène dans l'espace de Bidouille avec ce tuto ⬇️ 
 
 
+https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/assets/55806298/0becc358-937a-4a5c-8b5b-926d1765032c
+
+
+
 
 Et le lien présenté au début du tuto ⬇️
 
