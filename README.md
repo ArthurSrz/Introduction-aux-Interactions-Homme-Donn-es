@@ -31,7 +31,7 @@ Lisez en diagonale, en transversale mais surtout **ne lisez pas comme un bon él
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](./sketchnotes/00-Roadmap.png)|
 |:---:|
-| Data Science par un Nul: Roadmap - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
+| Data Science par un Nul: Feuille de route - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
 
 
 | Lesson Number | Topic | Lesson Grouping | Learning Objectives | Linked Lesson | Author |
