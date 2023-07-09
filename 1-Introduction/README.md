@@ -7,13 +7,13 @@ Dans ce premier bloc, tu vas apprendre que faire de la science de données revie
 La science de données est un domaine vaste qui fait appel aux mathématiques, aux statistiques, à la programmation mais également à la philosophie, à l'éthique et à la sociologie. Certains considèrent même que la _data science_ est une approche scientifique en soi. 
   
 
-### Topics
+### Sujets
 
-1. [Defining Data Science](01-defining-data-science/README.md)
-2. [Data Science Ethics](02-ethics/README.md)
-3. [Defining Data](03-defining-data/README.md)
-4. [Introduction to Statistics and Probability](04-stats-and-probability/README.md)
+1. [Qu'est-ce que la science des données](01-defining-data-science/README.md)
+2. [Ethique et data science](02-ethics/README.md)
+3. [Qu'est-ce que sont les _data_](03-defining-data/README.md)
+4. [Intoduction aux statistiques et aux probabilités](04-stats-and-probability/README.md)
 
-### Credits
+### Crédits
 
-These lessons were written with ❤️ by [Nitya Narasimhan](https://twitter.com/nitya) and [Dmitry Soshnikov](https://twitter.com/shwars).
+Ces leçons ont été créées par ❤️ by [Nitya Narasimhan](https://twitter.com/nitya), [Dmitry Soshnikov](https://twitter.com/shwars) puis traduites et éditées par [Arthur Sarazin](@SrzArthur)
