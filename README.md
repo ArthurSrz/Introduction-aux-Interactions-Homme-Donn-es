@@ -8,7 +8,7 @@ En effet, pourquoi être inquiet alors qu'Alan Turing est bien plus nul que nous
 
 Ce cours est fait pour toi si, comme moi, **tu as un syndrôme de l'imposteur quand on te parle de _data science_.** Le sujet te passione, tu peux en parler des heures mais au moment de mettre les mains dans le cambouis, ton rythme cardiaque monte à 220 et tu pers les pédales. 
 
-Ce cours, c'est un crash test. Il a été mené avec la même fougue qu'un monsieur n'ayant jamais fait de saut à ski et qui se lance pour la première fois. Il espère atterir sur ses skis tout en sachant que la situation la plus problable c'est celle-ci : 
+Sachez aussi que **ce cours est un crash test**. Il a été mené avec la même fougue de celui que se lance du haut d'un tremplin de saut à ski, sans avoir jamais mis des skis au pied. Il espère atterir sur ses skis mais, tout au fond de lui, il sait que la situation la plus problable, c'est celle-ci : 
 
 ![Alt Text](https://media.giphy.com/media/2XskdWAPOcE7dMn9Dz2/giphy.gif)
 
