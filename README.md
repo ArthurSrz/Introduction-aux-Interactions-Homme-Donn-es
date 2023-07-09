@@ -4,7 +4,7 @@
 Ce cours est né d'une citation d'**Alan Turing** prise (un peu trop) à la lettre :
 > Ne t'inquiète pas si tu as des difficultés en data, je peux t'assurer que les miennes sont bien plus importantes !
 
-En effet, pourquoi être inquiet alors qu'Alan Turing est bien nul que nous quand il s'agit de manipuler des données ? Il n'y a vraiment pas de quoi manger une 🍏
+En effet, pourquoi être inquiet alors qu'Alan Turing est bien plus nul que nous quand il s'agit de manipuler des données ? Il n'y a vraiment pas de quoi manger une 🍏
 
 Ce cours est fait pour toi si, comme moi, **tu as un syndrôme de l'imposteur quand on te parle de _data science_.** Le sujet te passione, tu peux en parler des heures mais au moment de mettre les mains dans le cambouis, ton rythme cardiaque monte à 220 et tu pers les pédales. 
 
