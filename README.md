@@ -15,7 +15,7 @@ Ce cours, c'est un crash test. Il a été mené avec la même fougue qu'un monsi
 ## Comment suivre ce cours
 Tu peux suivre ce cours de deux manières différentes : 
 
-1.En lisant [les leçons](https://arthursrz.github.io/La-Data-Science-Pour-Les-Nuls/#/?id=lessons) comme un polisson.
+1.En lisant [les leçons](https://arthursrz.github.io/La-Data-Science-Pour-Les-Nuls/#/?id=lire-les-le%c3%a7ons-comme-un-polisson) comme un polisson.
 
 2.En allant dans l'Espace de Bidouille (voir le Github Codespace ⬇️) où tu pourras clicker partout (LA technique d'apprentissage) pour comprendre comment ça marche. 
 
