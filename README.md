@@ -27,7 +27,7 @@ Tu peux suivre ce cours de deux manières différentes :
 
 Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et espièglerie, comme un polisson donc. 
 
-Lisez en diagonale, en transversale mais surtout **ne lisez pas comme un bon élève**. Allez là où votre oeil vous guide. C'est, à notre sens, **la meilleure manière d'entretenir et développer un intérêt pour cette discipline** parfois aride qu'est la science des données. Et tendre vers une passion pour elle ?
+Lisez en diagonale, en transversale mais surtout **ne lisez pas comme un bon élève**. Allez là où votre oeil vous guide. C'est, à notre sens, la meilleure manière d'entretenir et développer un intérêt pour cette discipline parfois aride qu'est la science des données. Et tendre vers une passion pour elle ?
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](./sketchnotes/00-Roadmap.png)|
 |:---:|
