@@ -59,7 +59,7 @@ Lisez en diagonale, en transversale mais surtout **ne lisez pas comme un bon él
 
 ### Espace de bidouille
 
-Pour bidouiller, rien de plus simple, il te suffit de ~~rentrer dans la matrice~~ suivre le tuto (en clickant ci-dessous) ⬇️
+Pour installer l'espace de bidouille, rien de plus simple, il te suffit de ~~rentrer dans la matrice~~ suivre le tuto (en clickant ci-dessous) ⬇️
 
 [![Tuto](images/magic-data.gif)](https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/assets/55806298/9956edf5-89ce-4ea2-b759-f8ca416ddd97)
 
@@ -68,5 +68,5 @@ Et de clicker ici pour ~~rentrer dans la matrice~~ mettre en application le tuto
 
 [![Espace de bidouille](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
-
+Une fois installé, rappelez-vous, clickez là où votre oeil est attiré, sans vous posez de questions, laissez-vous émerveiller par les visualisations qui vont apparaitre. Dans un premier temps ne cherchez pas à comprendre mais plutôt à toucher les données (avec les doigts). En _data science_, l'apprentissage passe par les doigts, par le _faire_. La compréhension intellectuelle viendra après, ne vous inquiétez pas. A force de faire, vous comprendrez. 
 
