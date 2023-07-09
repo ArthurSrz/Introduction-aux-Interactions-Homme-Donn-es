@@ -1,8 +1,8 @@
-# Defining Data Science
+# Qu'est-ce que la science des données
 
 | ![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/01-Definitions.png) |
 | :----------------------------------------------------------------------------------------------------: |
-|              Defining Data Science - _Sketchnote by [@nitya](https://twitter.com/nitya)_               |
+|              Qu'est-ce que la science des données - _Sketchnote by [@nitya](https://twitter.com/nitya)_               |
 
 ---
 
