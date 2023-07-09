@@ -57,19 +57,12 @@ Tu trouveras ci-dessous la liste des leçons qu'il faut lire aveec turbulence et
 
 ### Espace de bidouille
 
-Pour bidouiller, rien de plus simple, il te suffit de suivre le tuto ⬇️
+Pour bidouiller, rien de plus simple, il te suffit de ~~rentrer dans la matrice~~ suivre le tuto ⬇️
 
-![](images/magic-data.gif)
-
-
-
-https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/assets/55806298/86a75e93-9fe2-4801-994f-9256a8057997
+[![Tuto](images/magic-data.gif)]([https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198](https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/assets/55806298/86a75e93-9fe2-4801-994f-9256a8057997))
 
 
-
-
-
-Et de clicker ici pour mettre en application le tuto ⬇️
+Et de clicker ici pour ~~rentrer dans la matrice~~ mettre en application le tuto ⬇️
 
 [![Espace de bidouille](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
