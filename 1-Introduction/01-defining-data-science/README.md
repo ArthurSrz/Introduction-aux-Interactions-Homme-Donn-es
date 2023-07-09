@@ -33,7 +33,7 @@ Autrement dit, la data science c'est une science du relooking de l'information :
 
 
 
-C'est par là ➡️ [`notebook.ipynb`](/1-Introduction/01-defining-data-science/notebook.ipynb ':ignore') to read through the code.  You can also run the code, and see how it performs all data transformations in real time. 
+C'est par là ➡️ [![Espace de bidouille](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=344191198)
 
 > If you do not know how to run code in a Jupyter Notebook, have a look at [this article](https://soshnikov.com/education/how-to-execute-notebooks-from-github/).
 
