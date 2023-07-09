@@ -10,6 +10,25 @@
 
 ## [Pre-lecture quiz](https://purple-hill-04aebfb03.1.azurestaticapps.net/quiz/0)
 
+<div>
+  <img src="https://media.giphy.com/media/VoqOJnZQQM0tVeAyZL/giphy.gif" id="imageBefore" alt="Before">
+  <img src="https://media.giphy.com/media/VoqOJnZQQM0tVeAyZL/giphy.gif" id="imageAfter" alt="After">
+</div>
+
+<input type="range" min="0" max="1" step="0.01" value="0.5" id="slider">
+
+<script>
+  const slider = document.getElementById("slider");
+  const imageBefore = document.getElementById("imageBefore");
+  const imageAfter = document.getElementById("imageAfter");
+
+  slider.addEventListener("input", function () {
+    imageBefore.style.width = `${(1 - slider.value) * 100}%`;
+    imageAfter.style.width = `${slider.value * 100}%`;
+  });
+</script>
+
+
 ## What is Data?
 In our everyday life, we are constantly surrounded by data. The text you are reading now is data.  The list of phone numbers of your friends in your smartphone is data, as well as the current time displayed on your watch. As human beings, we naturally operate with data by counting the money we have or by writing letters to our friends.
 
