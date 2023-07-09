@@ -18,14 +18,14 @@
 <input type="range" min="0" max="1" step="0.01" value="0.5" id="slider">
 
 <script>
-  const slider = document.getElementById("slider");
-  const imageBefore = document.getElementById("imageBefore");
-  const imageAfter = document.getElementById("imageAfter");
+const slider = document.getElementById("slider");
+const imageBefore = document.getElementById("imageBefore");
+const imageAfter = document.getElementById("imageAfter");
 
-  slider.addEventListener("input", function () {
-    imageBefore.style.width = `${(1 - slider.value) * 100}%`;
-    imageAfter.style.width = `${slider.value * 100}%`;
-  });
+slider.addEventListener("input", function () {
+  imageBefore.style.width = `${(1 - slider.value) * 100}%`;
+  imageAfter.style.width = `${slider.value * 100}%`;
+});
 </script>
 
 
