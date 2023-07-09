@@ -1,9 +1,11 @@
-# Introduction to Data Science
+# Introduction à la science des données
 
-![](images/data-scientist.png) 
-> Photo by <a href="https://unsplash.com/@dawson2406?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stephen Dawson</a> on <a href="https://unsplash.com/s/photos/data?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+<img src="https://github.com/ArthurSrz/La-Data-Science-Pour-Les-Nuls/raw/main/images/data-scientist.png" width="550">
+
+Dans ce premier bloc, tu vas apprendre que faire de la science de données revient à **chevaucher un tigre fou, qui s'attaque à tout, sans peurs et sans reproches.** 
+
+La science de données est un domaine vaste qui fait appel aux mathématiques, aux statistiques, à la programmation mais également à la philosophie, à l'éthique et à la sociologie. Certains considèrent même que la _data science_ est une approche scientifique en soi. 
   
-In these lessons, you will discover how Data Science is defined and learn about ethical considerations that must be considered by a data scientist. You will also learn how data is defined and learn a bit about statistics and probability, the core academic domains of Data Science.
 
 ### Topics
 
