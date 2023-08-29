@@ -18,7 +18,7 @@ Alors oui, comme l'infographie ci-dessous, on pourrait essayer de comprendre la 
 --Bidouille box--
 
 1. Allez sur le moteur de recherche de jeux de données de Kaggle --> https://www.kaggle.com/datasets
-2. Tapez le premier mot qui vous vient à l'esprit ("chaussette" par exemple)
+2. Tapez le premier mot qui vous vient à l'esprit ("socks" par exemple)
 3. Cherchez un lien de téléchargement
 4. Téléchargez le jeu de données
 5. Ouvrez le sans réfléchir
