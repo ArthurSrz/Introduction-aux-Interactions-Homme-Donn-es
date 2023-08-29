@@ -27,7 +27,7 @@ Alors oui, comme l'infographie ci-dessous, on pourrait essayer de comprendre la 
 Et là, normalement à l'ouverture ça devrait donner ça ⬇️
 
 <div>
-  <img src="https://giphy.com/embed/ghutdpgRkhkxq" id="imageBefore" alt="Before">
+  <img src="https://media.giphy.com/media/ghutdpgRkhkxq/giphy.gif" id="imageBefore" alt="Before">
 </div>
 
 
