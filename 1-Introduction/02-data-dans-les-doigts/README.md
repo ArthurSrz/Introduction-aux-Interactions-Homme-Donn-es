@@ -23,6 +23,11 @@ Alors oui, comme l'infographie ci-dessous, on pourrait essayer de comprendre la 
 4. Téléchargez le jeu de données
 5. Ouvrez le sans réfléchir
 ```
+
+Ca doit donner ça ⬇️
+
+
+
 ## 
 
 Kaggle is an excellent source of open datasets. Use the  to find some interesting datasets and classify 3-5 datasets with this criteria:
