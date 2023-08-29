@@ -1,15 +1,14 @@
 # Les data dans les doigts
 
+Alors oui, comme l'infographie ci-dessous, on pourrait essayer de comprendre la donnée en utilisant des qualificatifs et des listes à la Prévert...
+
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/03-DefiningData.png)|
 |:---:|
 |Defining Data - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
 
-
-Alors oui, comme l'infographie ci-dessus, on pourrait essayer de comprendre la donnée en utilisant des qualificatifs, mais je crois que la data, ça se comprends d'abord **avec les doigts**.  
-
+...mais non car je crois que la data, ça se comprends d'abord **avec les doigts**.  
 
 
-## [Pre-Lecture Quiz](https://purple-hill-04aebfb03.1.azurestaticapps.net/quiz/4)
 ## Premier contact avec les données
 
 
@@ -18,7 +17,7 @@ Alors oui, comme l'infographie ci-dessus, on pourrait essayer de comprendre la d
 ```
 --Bidouille box--
 
-1. Allez sur le moteur de recherche de jeux de données de [Kaggle](https://www.kaggle.com/datasets)
+1. Allez sur le moteur de recherche de jeux de données de Kaggle --> https://www.kaggle.com/datasets
 2. Tapez le premier mot qui vous vient à l'esprit ("chaussette" par exemple)
 3. Cherchez un lien de téléchargement
 4. Téléchargez le jeu de données
