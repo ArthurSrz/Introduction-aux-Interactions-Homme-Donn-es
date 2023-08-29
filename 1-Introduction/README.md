@@ -10,7 +10,7 @@ La science de données est un domaine vaste qui fait appel aux mathématiques, a
 ### Sujets
 
 1. [Qu'est-ce que la science des données ?](01-preface/README.md)
-2. [Qu'est-ce que sont les _data_?](02-data-dans-les-doigts/README.md)
+2. [Qu'est-ce que sont les _data_ ?](02-data-dans-les-doigts/README.md)
 3. [Intoduction aux statistiques et aux probabilités](04-stats-and-probability/README.md)
 
 ### Crédits
