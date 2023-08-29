@@ -24,7 +24,12 @@ Alors oui, comme l'infographie ci-dessous, on pourrait essayer de comprendre la 
 5. Ouvrez le sans réfléchir
 ```
 
-Ca doit donner ça ⬇️
+Et là, normalement à l'ouverture ça devrait donner ça ⬇️
+
+<div>
+  <img src="https://giphy.com/embed/ghutdpgRkhkxq" id="imageBefore" alt="Before">
+</div>
+
 
 
 
