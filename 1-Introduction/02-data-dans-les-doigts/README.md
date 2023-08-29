@@ -24,23 +24,13 @@ Alors oui, comme l'infographie ci-dessous, on pourrait essayer de comprendre la 
 5. Ouvrez le sans réfléchir
 ```
 
-Et là, normalement à l'ouverture ça devrait donner ça ⬇️
+Et là, normalement à l'ouverture vous devriez avoir envie de faire ça ⬇️
 
 <div>
   <img src="https://media.giphy.com/media/ghutdpgRkhkxq/giphy.gif" id="imageBefore" alt="Before">
 </div>
 
 
-
-
-## 
-
-Kaggle is an excellent source of open datasets. Use the  to find some interesting datasets and classify 3-5 datasets with this criteria:
-
-- Is the data quantitative or qualitative?
-- Is the data structured, unstructured, or semi-structured?
-
- 
 ### Quantitative Data
 Quantitative data is numerical observations within a dataset and can typically be analyzed, measured and used mathematically. Some examples of quantitative data are: a country's population, a person's height or a company's quarterly earnings. With some additional analysis, quantitative data could be used to discover seasonal trends of the Air Quality Index (AQI) or estimate the probability of rush hour traffic on a typical work day.
 
