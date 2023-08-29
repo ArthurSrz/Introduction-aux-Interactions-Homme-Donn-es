@@ -22,6 +22,7 @@ Autrement dit, la data science c'est une science du relooking de l'information :
   <img src="https://media.giphy.com/media/RCoP1WSypiCty/giphy.gif" id="imageBefore" alt="Before">
 </div>
 
+
 ## Pour les moins Nuls
 
 
