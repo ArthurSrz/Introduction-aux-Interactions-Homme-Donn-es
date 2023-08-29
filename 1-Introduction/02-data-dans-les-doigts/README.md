@@ -5,13 +5,33 @@
 |Defining Data - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
 
 
-Data is facts, information, observations and measurements that are used to make discoveries and to support informed decisions. A data point is a single unit of data with in a dataset, which is collection of data points. Datasets may come in different formats and structures, and will usually be based on its source, or where the data came from. For example, a company's monthly earnings might be in a spreadsheet but hourly heart rate data from a smartwatch may be in [JSON](https://stackoverflow.com/a/383699) format. It's common for data scientists to work with different types of data within a dataset. 
+Alors oui, comme l'infographie ci-dessus, on pourrait essayer de comprendre la donnée en utilisant des qualificatifs, mais je crois que la data, ça se comprends d'abord **avec les doigts**.  
 
-This lesson focuses on identifying and classifying data by its characteristics and its sources.
+
 
 ## [Pre-Lecture Quiz](https://purple-hill-04aebfb03.1.azurestaticapps.net/quiz/4)
-## How Data is Described
-**Raw data** is data that has come from its source in its initial state and has not been analyzed or organized. In order to make sense of what is happening with a dataset, it needs to be organized into a format that can be understood by humans as well as the technology they may use to analyze it further. The structure of a dataset describes how it's organized and can be classified at structured, unstructured and semi-structured. These types of structure will vary, depending on the source but will ultimately fit in these three categories. 
+## Premier contact avec les données
+
+
+**Toucher des données brutes.** Votre premier contact **doit** se faire avec des données brutes. Pour voir toute l'étendue du champs que l'on a devant soi. Vous pouvez comparer l'exigence à faire face à des données brutes à celle qui préside à un saut en élastique. Pas le choix, vous devez sauter dans le **vrai vide**. En data science, le "vrai vide", c'est la donnée brute, que l'on appelle ainsi parce qu'elle n'a pas été façonnée par quelconque usage. Elle vient comme elle est. 
+
+```
+--Bidouille box--
+
+1. Allez sur le moteur de recherche de jeux de données de [Kaggle](https://www.kaggle.com/datasets)
+2. Tapez le premier mot qui vous vient à l'esprit ("chaussette" par exemple)
+3. Cherchez un lien de téléchargement
+4. Téléchargez le jeu de données
+5. Ouvrez le sans réfléchir
+```
+## 
+
+Kaggle is an excellent source of open datasets. Use the  to find some interesting datasets and classify 3-5 datasets with this criteria:
+
+- Is the data quantitative or qualitative?
+- Is the data structured, unstructured, or semi-structured?
+
+ 
 ### Quantitative Data
 Quantitative data is numerical observations within a dataset and can typically be analyzed, measured and used mathematically. Some examples of quantitative data are: a country's population, a person's height or a company's quarterly earnings. With some additional analysis, quantitative data could be used to discover seasonal trends of the Air Quality Index (AQI) or estimate the probability of rush hour traffic on a typical work day.
 
@@ -50,7 +70,7 @@ In this lesson we have learned:
 - How data is classified and categorized
 - Where data can be found
 
-## 🚀 Challenge
+## 
 
 Kaggle is an excellent source of open datasets. Use the [dataset search tool](https://www.kaggle.com/datasets) to find some interesting datasets and classify 3-5 datasets with this criteria:
 
