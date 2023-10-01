@@ -1,12 +1,11 @@
-# Working with Data: Relational Databases
+# Travailler avec des bases de données relationnelles.
 
-|![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/05-RelationalData.png)|
+|![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](https://github.com/ArthurSrz/La-Data-Science-Par-Un-Nul/blob/main/sketchnotes/05-RelationalData.png?raw=true)|
 |:---:|
 | Working With Data: Relational Databases - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
 
 Chances are you have used a spreadsheet in the past to store information. You had a set of rows and columns, where the rows contained the information (or data), and the columns described the information (sometimes called metadata). A relational database is built upon this core principle of columns and rows in tables, allowing you to have information spread across multiple tables. This allows you to work with more complex data, avoid duplication, and have flexibility in the way you explore the data. Let's explore the concepts of a relational database.
 
-## [Pre-lecture quiz](https://purple-hill-04aebfb03.1.azurestaticapps.net/quiz/8)
 
 ## It all starts with tables
 
@@ -160,22 +159,4 @@ WHERE rainfall.year = 2019
 
 Relational databases are centered around dividing information between multiple tables which is then brought back together for display and analysis. This provides a high degree of flexibility to perform calculations and otherwise manipulate data. You have seen the core concepts of a relational database, and how to perform a join between two tables.
 
-## 🚀 Challenge
 
-There are numerous relational databases available on the internet. You can explore the data by using the skills you've learned above.
-
-## Post-Lecture Quiz
-
-## [Post-lecture quiz](https://purple-hill-04aebfb03.1.azurestaticapps.net/quiz/9)
-
-## Review & Self Study
-
-There are several resources available on [Microsoft Learn](https://docs.microsoft.com/learn?WT.mc_id=academic-77958-bethanycheum) for you to continue your exploration of SQL and relational database concepts
-
-- [Describe concepts of relational data](https://docs.microsoft.com//learn/modules/describe-concepts-of-relational-data?WT.mc_id=academic-77958-bethanycheum)
-- [Get Started Querying with Transact-SQL](https://docs.microsoft.com//learn/paths/get-started-querying-with-transact-sql?WT.mc_id=academic-77958-bethanycheum) (Transact-SQL is a version of SQL)
-- [SQL content on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=azure-sql-database%2Csql-server&expanded=azure&WT.mc_id=academic-77958-bethanycheum)
-
-## Assignment
-
-[Assignment Title](assignment.md)
