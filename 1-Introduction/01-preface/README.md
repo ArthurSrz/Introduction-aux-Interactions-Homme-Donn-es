@@ -26,7 +26,7 @@ Autrement dit, la data science c'est une science du relooking de l'information :
 ## Pour les moins Nuls
 
 
-[![Defining Data Science Video](images/video-def-ds.png)](https://youtu.be/beZ7Mb_oz9I)
+![](https://youtu.be/beZ7Mb_oz9I)
 
 🚨 Les points à retenir : 
 * La science des données est un domaine scientifique qui utilise des **méthodes scientifiques pour extraire des connaissances et des idées à partir de données** structurées et non structurées, et pour appliquer des connaissances et des idées exploitables à partir de données dans un large éventail de domaines d'application.
