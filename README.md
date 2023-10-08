@@ -1,4 +1,4 @@
-# La Data Science par un Nul pour les Nuls : une introduction aux méthodes d'analyse de données
+# Introduction aux Interactions Homme-Données
 [![DOI](https://zenodo.org/badge/661398058.svg)](https://zenodo.org/badge/latestdoi/661398058)
 
 
