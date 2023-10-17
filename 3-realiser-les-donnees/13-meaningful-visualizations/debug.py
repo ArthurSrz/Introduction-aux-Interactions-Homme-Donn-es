@@ -1,2 +1,0 @@
-import interpreter
-interpreter.chat()
