@@ -7,7 +7,7 @@
 
 <script>
 import * as d3 from 'd3'
-import networkData from '@/assets/network-data.json' // Assurez-vous d'ajuster le chemin vers votre fichier JSON
+import networkData from '@/assets/data/letters.json' // Assurez-vous d'ajuster le chemin vers votre fichier JSON
 
 export default {
   mounted() {
@@ -16,17 +16,17 @@ export default {
   methods: {
     renderGraph(data) {
       // Utilisez D3.js pour créer le graphique de réseau ici
-      const svg = d3.select(this.$refs.networkGraph)
+      const svg = d3.select(this.$refs.networkGraph);
 
-      // Exemple de création de cercles pour chaque nœud (lettre)
-      const nodes = svg
+      // Exemple de création de cercles pour chaque nœud
+      svg
         .selectAll('circle')
         .data(data)
         .enter()
         .append('circle')
         .attr('r', 10) // Rayon du cercle
         .attr('cx', (d, i) => i * 50) // Disposition horizontale
-        .attr('cy', 50) // Hauteur constante pour les nœuds
+        .attr('cy', 50); // Hauteur constante pour les nœuds
 
       // Exemple de création de lignes pour les liens entre les nœuds
       svg
@@ -37,10 +37,10 @@ export default {
         .attr('x1', (d, i) => i * 50) // Position horizontale du nœud source
         .attr('y1', 50) // Hauteur constante pour le nœud source
         .attr('x2', (d, i) => i * 50 + 50) // Position horizontale du nœud cible
-        .attr('y2', 50) // Hauteur constante pour le nœud cible
+        .attr('y2', 50); // Hauteur constante pour le nœud cible
     },
   },
-}
+};
 </script>
 
 <style scoped>

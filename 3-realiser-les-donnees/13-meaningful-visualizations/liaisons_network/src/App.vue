@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import NetworkData from 'components/NetworkData.vue'
+import NetworkData from './components/NetworkData.vue'
 
 export default {
   components: {
