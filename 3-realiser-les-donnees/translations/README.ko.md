@@ -13,7 +13,7 @@
 2. [분포 시각화](../10-visualization-distributions/README.md)
 3. [비율 시각화](../11-visualization-proportions/README.md)
 4. [관계 시각화](../12-visualization-relationships/README.md)
-5. [의미있는 시각화 만들기](../13-meaningful-visualizations/README.md)
+5. [의미있는 시각화 만들기](Dangerous%20Liaisons%20data%20visualization%20project.md)
 
 ### 크레딧
 

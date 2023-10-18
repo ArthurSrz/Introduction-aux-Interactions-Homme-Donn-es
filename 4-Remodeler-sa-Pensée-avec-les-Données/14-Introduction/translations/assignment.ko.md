@@ -4,7 +4,7 @@
 
 그들은 알고 싶어한다: **뉴욕의 노란 택시 승객들은 겨울이나 여름에 기사들에게 팁을 더 많이 주는가?**
 
-귀하의 팀은 데이터과학 라이프사이클 [캡처링](Readme.md#Capturing) 단계에 있으며, 귀하는 데이터 셋을 처리하는 임무를 맡고 있습니다. 노트북과 가공할 [데이터](../../data/taxi.csv)를 제공받으셨습니다.
+귀하의 팀은 데이터과학 라이프사이클 [캡처링](Publications/Teaching/La-Data-Science-Pour-Les-Nuls/README.md#Capturing) 단계에 있으며, 귀하는 데이터 셋을 처리하는 임무를 맡고 있습니다. 노트북과 가공할 [데이터](../../data/taxi.csv)를 제공받으셨습니다.
 
 이 디렉토리에서는 파이썬을 사용하여 [NYC택시 & 리무진 위원회](https://docs.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets)로부터 노란색 택시 트립 데이터를 로드하는 [노트북](notebook.ipynb)이 있습니다. 
 엑셀과 같은 텍스트 편집기나 스프레드시트 소프트웨어에서 택시 데이터 파일을 열 수도 있습니다.

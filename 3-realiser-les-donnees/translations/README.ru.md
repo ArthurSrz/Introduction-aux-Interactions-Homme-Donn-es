@@ -14,7 +14,7 @@
 1. [Визуализация распределения данных](10-visualization-distributions/README.md)
 1. [Визуализация пропорций](11-visualization-proportions/README.md)
 1. [Визуализация связей](12-visualization-relationships/README.md)
-1. [Выразительная визуализация](13-meaningful-visualizations/README.md)
+1. [Выразительная визуализация](Dangerous%20Liaisons%20data%20visualization%20project.md)
 
 ### Благодарности
 

@@ -13,7 +13,7 @@ Nessas cinco aulas, você irá explorar dados vindos da natureza e criar visuali
 1. [Visualizando distribuições](../10-visualization-distributions/translations/README.pt-br.md)
 1. [Visualizando proporções](../11-visualization-proportions/README.md) (ainda não traduzido)
 1. [Visualizando relações](../12-visualization-relationships/README.md) (ainda não traduzido)
-1. [Criando visualizações relevantes](../13-meaningful-visualizations/README.md) (ainda não traduzido)
+1. [Criando visualizações relevantes](Dangerous%20Liaisons%20data%20visualization%20project.md) (ainda não traduzido)
 
 ### Créditos
 
