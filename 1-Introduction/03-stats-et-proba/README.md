@@ -123,6 +123,17 @@ Plus formellement, le problème que nous essayons de résoudre consiste à savoi
 
 ### Etape 1 : déterminer la population à partir de l'échantillon grâce aux intervalles de confiance
 
+Les statistiques confèrent une force rhétorique dans une prise de décision car elle permet de parler au nom de grands ensembles ou de généralités. Ce qui est difficile à assimilier je trouve, le saut conceptuel le plus difficile à faire pour nous (qui ne sommes pas nés statisticiens ou data scientist) est de comprendre que les grands ensembles ou les généralités sont **hautement probabilistes**. 
+
+Pourquoi, me direz-vous:
+* pourquoi ne pouvons-nous parler de grands ensembles qu'avec des probabilités ? 
+* pouquoi ne pouvons-nous pas être certain, par exemple, que tous les hommes sont plus grands que les femmes ? 
+
+Tout simplement car personne ne pourra jamais mesurer TOUS les hommes et TOUTES les femmes. De fait, nous ne pourrons jamais être certain à 100% de cette différence.
+
+Les statistiques nous permettent de nous rapprocher de ces certitudes sans jamais les atteindre, et ce, grâce aux probabilités. 
+
+
 When we talk about weights of baseball players, we assume that there is certain **random variable W** that corresponds to ideal probability distribution of weights of all baseball players (so-called **population**). Our sequence of weights corresponds to a subset of all baseball players that we call **sample**. An interesting question is, can we know the parameters of distribution of W, i.e. mean and variance of the population?
 
 The easiest answer would be to calculate mean and variance of our sample. However, it could happen that our random sample does not accurately represent complete population. Thus it makes sense to talk about **confidence interval**.
