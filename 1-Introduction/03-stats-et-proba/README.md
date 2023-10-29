@@ -95,31 +95,67 @@ La différence entre Sherlock Holmes et nous tient à ce que nous ne résolvons 
 >      <img src="https://media.giphy.com/media/h0DX3CtxiSHw4/giphy.gif" width="200">
 >    
 
+Un test d'hypothèse, à la traduire dans un langage plus courant : 
+1. vient d'un questionnement (ci-dessus : "les prix sont-ils différents ?")
+2. traduit sous la forme d'une proposition hypothétique : "les prix ne sont pas différents" ou "les prix sont différents"
+3. confrontée à un test statistique sur des données et aboutissant une réponse définitive : "vrai" ou "faux"
+4. la réponse binaire permettant ensuite de répondre à la proposition hypothétique : oui, "les prix sont différents" ou non, "les prix ne sont pas différents" 
+
+La clé ici est de comprendre que **le test d'hypothèse n'est qu'une manière de formuler différemment une question**. L'interactions homme-données peut à mains égards se comparer à un travail de traduction entre deux langues avec d'un côté le langage courant que nous utilisons au quotidien (facile à utiliser mais peu précis) et de l'autre le langage des données (précis mais difficile à utiliser).
+
+Aussi s'agit-il de comprendre que la force du test statistique est de pouvoir répondre à des questions avec une très grande précision mais aussi de pouvoir dire dans quelle mesure on peut généraliser la réponse à la question. Dans notre exemple, le test va permettre de dire dans quelle mesure **tous les prix** de l'immobilier autour de chez moi sont différents de **tous les prix** autour de chez mes parents et ceux, uniquement avec des données restreintes. 
+
+On dit alors des statistiques qu'elles ont des **capacités inférentielles** : elles permettent d'induire les caractéristiques d'un groupe général à partir de celles d'un groupe particulier. Imaginez la puissance d'une telle capacité : 
+* ce sont elles qui permettent de mettre des vaccins ou des médicaments sur le marché
+* de s'assurer de la rentabilité ou de l'efficacité d'un produit avant son lancement
+* de prédire le comportement d'une population à partir de l'obersation du comportement d'un groupe d'individus
+
+Le prix d'une telle puissance passe par une formalisation rigoureuse et de l'introduction de probabilités. C'est ce que nous allons voir dans la suite de cette leçon.
+
+## Formaliser le test d'hypothèse pour apporter une réponse précise
 
 Plus formellement, le problème que nous essayons de résoudre consiste à savoir  si **les deux distributions sont les mêmes**. Pour cela nous devons faire un test d'hypothèses. Si nous savons que les distributions sont normales, nous pouvons par exemple appliquer : 
 * le **[test t de Student](https://fr.wikipedia.org/wiki/Test_t_de_Student)**
-* le **[test de Kolmogorov-Smirnov](https://fr.wikipedia.org/wiki/Test_de_Kolmogorov-Smirnov)**
-* le khi-deux de **[Pearson](https://fr.wikipedia.org/wiki/Test_de_Student)**
+* le khi-deux de **[Pearson](https://fr.wikipedia.org/wiki/Test_du_%CF%87%C2%B2)**
+
+> **Anecdote**
+> Le test t de Student a été nommé ainsi car son inventeur William Sealy Gosser a publié un article sous le nom de plume de "Student". Il travaillait dans une brasserie et son employeur ne voulait pas que le public sache qu'ils utilisaient des tests statistiques pour déterminer la qualité des matières premières.
+
+### Etape 1 : déterminer la population à partir de l'échantillon grâce aux intervalles de confiance
+
+When we talk about weights of baseball players, we assume that there is certain **random variable W** that corresponds to ideal probability distribution of weights of all baseball players (so-called **population**). Our sequence of weights corresponds to a subset of all baseball players that we call **sample**. An interesting question is, can we know the parameters of distribution of W, i.e. mean and variance of the population?
+
+The easiest answer would be to calculate mean and variance of our sample. However, it could happen that our random sample does not accurately represent complete population. Thus it makes sense to talk about **confidence interval**.
+
+> **Confidence interval** is the estimation of true mean of the population given our sample, which is accurate is a certain probability (or **level of confidence**).
 
 
+Suppose we have a sample X<sub>1</sub>, ..., X<sub>n</sub> from our distribution. Each time we draw a sample from our distribution, we would end up with different mean value &mu;. Thus &mu; can be considered to be a random variable. A **confidence interval** with confidence p is a pair of values (L<sub>p</sub>,R<sub>p</sub>), such that **P**(L<sub>p</sub>&leq;&mu;&leq;R<sub>p</sub>) = p, i.e. a probability of measured mean value falling within the interval equals to p.
 
-In our baseball players dataset, there are different player roles, that can be summarized below (look at the [accompanying notebook](notebook.ipynb) to see how this table can be calculated):
 
-| Role | Height | Weight | Count |
-|------|--------|--------|-------|
-| Catcher | 72.723684 | 204.328947 | 76 |
-| Designated_Hitter | 74.222222 | 220.888889 | 18 |
-| First_Baseman | 74.000000 | 213.109091 | 55 |
-| Outfielder | 73.010309 | 199.113402 | 194 |
-| Relief_Pitcher | 74.374603 | 203.517460 | 315 |
-| Second_Baseman | 71.362069 | 184.344828 | 58 |
-| Shortstop | 71.903846 | 182.923077 | 52 |
-| Starting_Pitcher | 74.719457 | 205.163636 | 221 |
-| Third_Baseman | 73.044444 | 200.955556 | 45 |
+### Etape 2 : calculer des intervalles de confiance pour une variable
 
-We can notice that the mean heights of first basemen is higher than that of second basemen. Thus, we may be tempted to conclude that **first basemen are higher than second basemen**.
+> It does beyond our short intro to discuss in detail how those confidence intervals are calculated. Some more details can be found [on Wikipedia](https://en.wikipedia.org/wiki/Confidence_interval). In short, we define the distribution of computed sample mean relative to the true mean of the population, which is called **student distribution**.
 
-> This statement is called **a hypothesis**, because we do not know whether the fact is actually true or not.
+If we want to estimate the mean &mu; of our population with confidence p, we need to take *(1-p)/2-th percentile* of a Student distribution A, which can either be taken from tables, or computer using some built-in functions of statistical software (eg. Python, R, etc.). Then the interval for &mu; would be given by X&pm;A*D/&radic;n, where X is the obtained mean of the sample, D is the standard deviation.
+
+> **Note**: We also omit the discussion of an important concept of [degrees of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), which is important in relation to Student distribution. You can refer to more complete books on statistics to understand this concept deeper.
+
+An example of calculating confidence interval for weights and heights is given in the [accompanying notebooks](notebook.ipynb).
+
+| p | Weight mean |
+|-----|-----------|
+| 0.85 | 201.73±0.94 |
+| 0.90 | 201.73±1.08 |
+| 0.95 | 201.73±1.28 |
+
+Notice that the higher is the confidence probability, the wider is the confidence interval. 
+
+
+### Etape 3 : comporer les intervalles de confiance de chaque variable
+
+
+#### Analyse visuelle
 
 However, it is not always obvious whether we can make this conclusion. From the discussion above we know that each mean has an associated confidence interval, and thus this difference can just be a statistical error. We need some more formal way to test our hypothesis.
 
@@ -133,7 +169,7 @@ Let's compute confidence intervals separately for heights of first and second ba
 
 We can see that under no confidence the intervals overlap. That proves our hypothesis that first basemen are higher than second basemen.
 
-More formally, the problem we are solving is to see if **two probability distributions are the same**, or at least have the same parameters. Depending on the distribution, we need to use different tests for that. If we know that our distributions are normal, we can apply **[Student t-test](https://en.wikipedia.org/wiki/Student%27s_t-test)**. 
+#### Analyse numérique 
 
 In Student t-test, we compute so-called **t-value**, which indicates the difference between means, taking into account the variance. It is demonstrated that t-value follows **student distribution**, which allows us to get the threshold value for a given confidence level **p** (this can be computed, or looked up in the numerical tables). We then compare t-value to this threshold to approve or reject the hypothesis.
 
@@ -158,35 +194,6 @@ There are also different other types of hypothesis that we might want to test, f
 * To compare means of a number of samples (eg. what is the difference in happiness levels among different age groups)
 
 
-
-## Confidence Intervals
-
-
-When we talk about weights of baseball players, we assume that there is certain **random variable W** that corresponds to ideal probability distribution of weights of all baseball players (so-called **population**). Our sequence of weights corresponds to a subset of all baseball players that we call **sample**. An interesting question is, can we know the parameters of distribution of W, i.e. mean and variance of the population?
-
-The easiest answer would be to calculate mean and variance of our sample. However, it could happen that our random sample does not accurately represent complete population. Thus it makes sense to talk about **confidence interval**.
-
-> **Confidence interval** is the estimation of true mean of the population given our sample, which is accurate is a certain probability (or **level of confidence**).
-
-Suppose we have a sample X<sub>1</sub>, ..., X<sub>n</sub> from our distribution. Each time we draw a sample from our distribution, we would end up with different mean value &mu;. Thus &mu; can be considered to be a random variable. A **confidence interval** with confidence p is a pair of values (L<sub>p</sub>,R<sub>p</sub>), such that **P**(L<sub>p</sub>&leq;&mu;&leq;R<sub>p</sub>) = p, i.e. a probability of measured mean value falling within the interval equals to p.
-
-It does beyond our short intro to discuss in detail how those confidence intervals are calculated. Some more details can be found [on Wikipedia](https://en.wikipedia.org/wiki/Confidence_interval). In short, we define the distribution of computed sample mean relative to the true mean of the population, which is called **student distribution**.
-
-> **Interesting fact**: Student distribution is named after mathematician William Sealy Gosset, who published his paper under the pseudonym "Student". He worked in the Guinness brewery, and, according to one of the versions, his employer did not want general public to know that they were using statistical tests to determine the quality of raw materials.
-
-If we want to estimate the mean &mu; of our population with confidence p, we need to take *(1-p)/2-th percentile* of a Student distribution A, which can either be taken from tables, or computer using some built-in functions of statistical software (eg. Python, R, etc.). Then the interval for &mu; would be given by X&pm;A*D/&radic;n, where X is the obtained mean of the sample, D is the standard deviation.
-
-> **Note**: We also omit the discussion of an important concept of [degrees of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), which is important in relation to Student distribution. You can refer to more complete books on statistics to understand this concept deeper.
-
-An example of calculating confidence interval for weights and heights is given in the [accompanying notebooks](notebook.ipynb).
-
-| p | Weight mean |
-|-----|-----------|
-| 0.85 | 201.73±0.94 |
-| 0.90 | 201.73±1.08 |
-| 0.95 | 201.73±1.28 |
-
-Notice that the higher is the confidence probability, the wider is the confidence interval. 
 
 ## Law of Large Numbers and Central Limit Theorem
 
