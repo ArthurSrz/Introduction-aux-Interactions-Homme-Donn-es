@@ -2,7 +2,7 @@
 
 Pourquoi tout de suite aborder des concepts comme les distribution, la médiane, la variance, et la statistiques quand on parle de données ? 
 
-## La statistique comme science du très grand (et je ne parle de Dieu)
+## La statistique comme science du très grand (et je ne parle pas de Dieu)
 
 Car la statistique, c'est la science du **très grand et des phénomènes à grande échelle**. Les individus ou, plus généralement les faits isolés sont comme des fils que l'on peut tirer vers des données. Quand on rassemble ces fils et qu'on les classe, on obtient des paquets, qui, presque par magie ont toujours la même forme. 
 
@@ -49,50 +49,51 @@ Figure 1: Boite de galton qui représente une distribution normale, disponible d
 
 
 
-## Normal Distribution
+### Les statistiques comme science du comportement des données.
 
-The distribution of weights that we have seen above is very typical, and many measurements from real world follow the same type of distribution, but with different mean and variance. This distribution is called **normal distribution**, and it plays a very important role in statistics.
+La statistique régit le grand aléatoire que sont les données. En cela la statistique nous donne des informations sur le comportement de toute variable prise indépendamment de toutes les autres (on parle de variable _aléatoire_) : prix d'un actif financier, taille d'un individu, nombre de personnes dans un foyer, probabilité de gagner à un jeu de hasard, etc.
 
-Using normal distribution is a correct way to generate random weights of potential baseball players. Once we know mean weight `mean` and standard deviation `std`, we can generate 1000 weight samples in the following way:
-```python
-samples = np.random.normal(mean,std,1000)
-``` 
+Une manière utile de penser la statistique peut être de la voir comme une science du comportement. A la différence près qu'elle n'étudie pas le comportement d'un être humain ou d'une espèce vivante mais plutôt le comportement des données en grandes quantités. Or, comme les êtres vivants, les nombres suivent des lois qui se retrouvent partout. 
 
-If we plot the histogram of the generated samples we will see the picture very similar to the one shown above. And if we increase the number of samples and the number of bins, we can generate a picture of a normal distribution that is more close to ideal:
+Une loi fondamentale veut que si vous prenez une mesure et que vous répetez l'opération un très grand nombre de fois, alors l'ensemble des mesures prises (dite distribution) suivra une loi normale. Autrement dit : 
+* si vous mesurez et visualisez la taille de 1000 personnes, vous obtiendrez une distribution normale
+* si vous mesurez et visualisez la vitesse de pointe de 1000 chiens, vous obtiendrez une distribution normale
+* si vous mesurez le poids de 1000 arbres, vous obtiendrez une distribution normale. 
+
+Cette distribution normale prend la forme d'une cloche (d'où le fait qu'on l'a nomme aussi _distribution en cloche_) : 
 
 ![Normal Distribution with mean=0 and std.dev=1](images/normal-histogram.png)
 
-*Normal Distribution with mean=0 and std.dev=1*
+*Distribution normale d'une variable (augmentation du salaire annuel en %) avec une moyenne de 0 et une déviation standard de 1*
 
-## Confidence Intervals
 
-When we talk about weights of baseball players, we assume that there is certain **random variable W** that corresponds to ideal probability distribution of weights of all baseball players (so-called **population**). Our sequence of weights corresponds to a subset of all baseball players that we call **sample**. An interesting question is, can we know the parameters of distribution of W, i.e. mean and variance of the population?
+> **_Studio d'interaction_**   
+> 1. Sur n'importe quelle plateforme open data, téléchargez un fichier de données
+> 2. Choisissez une variable quantitative
+> 3. Dessinez un graphique avec en abscisse les valeurs uniques de la variable et en ordonnée le nombre de fois que chaque valeur apparait dans le jeu de données.
+> 4. Regardez la forme de votre graphique 
+>
+>      <img src="https://media.giphy.com/media/oYtVHSxngR3lC/giphy.gif" width="200">
+>
 
-The easiest answer would be to calculate mean and variance of our sample. However, it could happen that our random sample does not accurately represent complete population. Thus it makes sense to talk about **confidence interval**.
 
-> **Confidence interval** is the estimation of true mean of the population given our sample, which is accurate is a certain probability (or **level of confidence**).
+## Evaluer le comportement des données grâce à des tests d'hypothèses
 
-Suppose we have a sample X<sub>1</sub>, ..., X<sub>n</sub> from our distribution. Each time we draw a sample from our distribution, we would end up with different mean value &mu;. Thus &mu; can be considered to be a random variable. A **confidence interval** with confidence p is a pair of values (L<sub>p</sub>,R<sub>p</sub>), such that **P**(L<sub>p</sub>&leq;&mu;&leq;R<sub>p</sub>) = p, i.e. a probability of measured mean value falling within the interval equals to p.
+L'avantage d'avoir des données avec un comportement fixe et fixés dans les lois statistiques, c'est qu'on peut établir avec une précision très précise des faits qui autrement reste dans le vague. Par exemple : votre intuition vous dit que les prix de l'immobilier autour de vous sont plus chers que dans le voisinnage de vos parents. Mais est-ce vraiment le cas ? Les données avec l'aide des statistiques peuvent permettre d'apporter une réponse claire et définitive à cette question. 
 
-It does beyond our short intro to discuss in detail how those confidence intervals are calculated. Some more details can be found [on Wikipedia](https://en.wikipedia.org/wiki/Confidence_interval). In short, we define the distribution of computed sample mean relative to the true mean of the population, which is called **student distribution**.
+A ce stade, les statistiques vont servir de loupe pour mieux comprendre le comportement de certaines données. A la manière d'un détective. D'ailleurs, ce n'est pas un hasard si le Sherlock Holmes originel de Sir Arthur Conan Doyle fait usage d'observation et de raisonnement. statistiques dans ces enquêtes : elles sont bien un outil d'investigation. 
 
-> **Interesting fact**: Student distribution is named after mathematician William Sealy Gosset, who published his paper under the pseudonym "Student". He worked in the Guinness brewery, and, according to one of the versions, his employer did not want general public to know that they were using statistical tests to determine the quality of raw materials.
+La différence entre Sherlock Holmes et nous tient à ce que nous ne résolvons pas des affaires criminelles mais que nous voulons **tester des hypothèses**
 
-If we want to estimate the mean &mu; of our population with confidence p, we need to take *(1-p)/2-th percentile* of a Student distribution A, which can either be taken from tables, or computer using some built-in functions of statistical software (eg. Python, R, etc.). Then the interval for &mu; would be given by X&pm;A*D/&radic;n, where X is the obtained mean of the sample, D is the standard deviation.
-
-> **Note**: We also omit the discussion of an important concept of [degrees of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), which is important in relation to Student distribution. You can refer to more complete books on statistics to understand this concept deeper.
-
-An example of calculating confidence interval for weights and heights is given in the [accompanying notebooks](notebook.ipynb).
-
-| p | Weight mean |
-|-----|-----------|
-| 0.85 | 201.73±0.94 |
-| 0.90 | 201.73±1.08 |
-| 0.95 | 201.73±1.28 |
-
-Notice that the higher is the confidence probability, the wider is the confidence interval. 
-
-## Hypothesis Testing 
+> **_Studio d'interaction_**  
+> Mettons que nous voulons évaluer si deux variables sont fondamentalement différentes : le prix de l'immobilier autour de moi est-il différent de celui autour de chez mes parents ? 
+> 1. Pour commencer, récupérez au hasard le prix de 20 actifs immobiliers autour de chez vous et 20 actifs immobiliers autour de chez vos parents.
+> 3. Créez un graphique vide avec avec en abscisse des intervalles de prix de la variable et en ordonnée le nombre de fois que chaque valeur apparait dans cet intervalle
+> 4. D'une couleur, dessinez la distribution des prix autour de chez vous et de l'autre, d'une autre, dessinez la distribution des prix autour de chez vos parents.
+> 5. A vue d'oeil, est-ce que les prix sont différents ?
+>
+>      <img src="https://media.giphy.com/media/h0DX3CtxiSHw4/giphy.gif " width="200">
+>    
 
 In our baseball players dataset, there are different player roles, that can be summarized below (look at the [accompanying notebook](notebook.ipynb) to see how this table can be calculated):
 
@@ -147,6 +148,37 @@ There are also different other types of hypothesis that we might want to test, f
 * To prove that a given sample follows some distribution. In our case we have assumed that heights are normally distributed, but that needs formal statistical verification. 
 * To prove that a mean value of a sample corresponds to some predefined value
 * To compare means of a number of samples (eg. what is the difference in happiness levels among different age groups)
+
+
+
+## Confidence Intervals
+
+
+When we talk about weights of baseball players, we assume that there is certain **random variable W** that corresponds to ideal probability distribution of weights of all baseball players (so-called **population**). Our sequence of weights corresponds to a subset of all baseball players that we call **sample**. An interesting question is, can we know the parameters of distribution of W, i.e. mean and variance of the population?
+
+The easiest answer would be to calculate mean and variance of our sample. However, it could happen that our random sample does not accurately represent complete population. Thus it makes sense to talk about **confidence interval**.
+
+> **Confidence interval** is the estimation of true mean of the population given our sample, which is accurate is a certain probability (or **level of confidence**).
+
+Suppose we have a sample X<sub>1</sub>, ..., X<sub>n</sub> from our distribution. Each time we draw a sample from our distribution, we would end up with different mean value &mu;. Thus &mu; can be considered to be a random variable. A **confidence interval** with confidence p is a pair of values (L<sub>p</sub>,R<sub>p</sub>), such that **P**(L<sub>p</sub>&leq;&mu;&leq;R<sub>p</sub>) = p, i.e. a probability of measured mean value falling within the interval equals to p.
+
+It does beyond our short intro to discuss in detail how those confidence intervals are calculated. Some more details can be found [on Wikipedia](https://en.wikipedia.org/wiki/Confidence_interval). In short, we define the distribution of computed sample mean relative to the true mean of the population, which is called **student distribution**.
+
+> **Interesting fact**: Student distribution is named after mathematician William Sealy Gosset, who published his paper under the pseudonym "Student". He worked in the Guinness brewery, and, according to one of the versions, his employer did not want general public to know that they were using statistical tests to determine the quality of raw materials.
+
+If we want to estimate the mean &mu; of our population with confidence p, we need to take *(1-p)/2-th percentile* of a Student distribution A, which can either be taken from tables, or computer using some built-in functions of statistical software (eg. Python, R, etc.). Then the interval for &mu; would be given by X&pm;A*D/&radic;n, where X is the obtained mean of the sample, D is the standard deviation.
+
+> **Note**: We also omit the discussion of an important concept of [degrees of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), which is important in relation to Student distribution. You can refer to more complete books on statistics to understand this concept deeper.
+
+An example of calculating confidence interval for weights and heights is given in the [accompanying notebooks](notebook.ipynb).
+
+| p | Weight mean |
+|-----|-----------|
+| 0.85 | 201.73±0.94 |
+| 0.90 | 201.73±1.08 |
+| 0.95 | 201.73±1.28 |
+
+Notice that the higher is the confidence probability, the wider is the confidence interval. 
 
 ## Law of Large Numbers and Central Limit Theorem
 

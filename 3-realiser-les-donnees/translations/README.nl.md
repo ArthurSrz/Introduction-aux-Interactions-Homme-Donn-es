@@ -12,7 +12,7 @@ In deze vijf lessen verkennen we gegevens uit de natuur en maken we interessante
 1. [Distributie visualiseren](10-visualization-distributions/README.md)
 1. [Proporties visualiseren](11-visualization-proportions/README.md)
 1. [Relaties visualiseren](12-visualization-relationships/README.md)
-1. [Betekenisvolle visualisaties maken](Dangerous%20Liaisons%20data%20visualization%20project.md)
+1. [Betekenisvolle visualisaties maken](Le%20réseau%20diabolique%20des%20Liaisons%20dangeureuses.md)
 
 ### Credits
 

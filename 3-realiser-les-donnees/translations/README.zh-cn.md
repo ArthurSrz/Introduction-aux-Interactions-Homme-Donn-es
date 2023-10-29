@@ -13,7 +13,7 @@
 1. [可视化数据分布](../10-visualization-distributions/README.md)
 1. [可视化数据占比](../11-visualization-proportions/README.md)
 1. [可视化数据间的关系](../12-visualization-relationships/README.md)
-1. [做有意义的可视化](Dangerous%20Liaisons%20data%20visualization%20project.md)
+1. [做有意义的可视化](Le%20réseau%20diabolique%20des%20Liaisons%20dangeureuses.md)
 
 ### 致谢
 

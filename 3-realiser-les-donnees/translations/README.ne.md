@@ -11,7 +11,7 @@
 २. [वितरण भिजुअलाईजिङ](10-visualization-distributions/README.md)
 ३. [अनुपात भिजुअलाईजिङ](11-visualization-proportions/README.md)
 ४. [सम्बन्धहरु भिजुअलाईजिङ](12-visualization-relationships/README.md)
-५. [भिजुअलाइजेसन अर्थपूर्ण बनाउने](Dangerous%20Liaisons%20data%20visualization%20project.md)
+५. [भिजुअलाइजेसन अर्थपूर्ण बनाउने](Le%20réseau%20diabolique%20des%20Liaisons%20dangeureuses.md)
 
 ### बिषेष धन्यवाद
 
