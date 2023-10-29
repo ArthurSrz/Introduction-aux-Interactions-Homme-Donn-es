@@ -212,45 +212,32 @@ La p-value est très faible, ce qui signifie qu'il y a de fortes chances que les
 
 
 
-## Covariance and Correlation
+## Comprendre le comportement des données grâce au calcul de corrélations et de covariances
 
-One of the things Data Science does is finding relations between data. We say that two sequences **correlate** when they exhibit the similar behavior at the same time, i.e. they either rise/fall simultaneously, or one sequence rises when another one falls and vice versa. In other words, there seems to be some relation between two sequences.
+L'autre pouvoir magique des statistiques, c'est de détecter des relations entre les données. On dit que deux séquences sont **corrélées** lorsqu'elles présentent un comportement similaire au même moment, c'est-à-dire qu'elles montent/descendent simultanément, ou qu'une séquence monte lorsqu'une autre descend et vice versa. En d'autres termes, il semble y avoir une certaine relation entre deux séquences.
 
-> Correlation does not necessarily indicate causal relationship between two sequences; sometimes both variables can depend on some external cause, or it can be purely by chance the two sequences correlate. However, strong mathematical correlation is a good indication that two variables are somehow connected.
+> La corrélation n'indique pas nécessairement une relation de cause à effet entre deux séquences ; parfois, les deux variables peuvent dépendre d'une cause externe, ou la corrélation entre les deux séquences peut être purement fortuite. Cependant, une forte corrélation mathématique est une bonne indication que deux variables sont liées d'une manière ou d'une autre.
 
- Mathematically, the main concept that shows the relation between two random variables is **covariance**, that is computed like this: Cov(X,Y) = **E**\[(X-**E**(X))(Y-**E**(Y))\]. We compute the deviation of both variables from their mean values, and then product of those deviations. If both variables deviate together, the product would always be a positive value, that would add up to positive covariance. If both variables deviate out-of-sync (i.e. one falls below average when another one rises above average), we will always get negative numbers, that will add up to negative covariance. If the deviations are not dependent, they will add up to roughly zero.
+ Mathématiquement, le principal concept qui montre la relation entre deux variables aléatoires est la **covariance**, qui se calcule comme suit : Cov(X,Y) = **E**\[(X-**E**(X))(Y-**E**(Y))\]. Nous calculons l'écart des deux variables par rapport à leurs valeurs moyennes, puis le produit de ces écarts. Si les deux variables s'écartent ensemble, le produit sera toujours une valeur positive, ce qui correspondra à une covariance positive. Si les deux variables s'écartent de manière désynchronisée (c'est-à-dire que l'une tombe en dessous de la moyenne alors que l'autre monte au-dessus de la moyenne), nous obtiendrons toujours des nombres négatifs, qui s'additionneront pour former une covariance négative. Si les écarts ne sont pas dépendants, leur somme sera approximativement égale à zéro.
 
-The absolute value of covariance does not tell us much on how large the correlation is, because it depends on the magnitude of actual values. To normalize it, we can divide covariance by standard deviation of both variables, to get **correlation**. The good thing is that correlation is always in the range of [-1,1], where 1 indicates strong positive correlation between values, -1 - strong negative correlation, and 0 - no correlation at all (variables are independent). 
+La valeur absolue de la covariance ne nous renseigne pas beaucoup sur l'importance de la corrélation, car elle dépend de l'ampleur des valeurs réelles. Pour la normaliser, nous pouvons diviser la covariance par l'écart-type des deux variables, pour obtenir la **corrélation**. L'avantage est que la corrélation est toujours comprise entre [-1,1], où 1 indique une forte corrélation positive entre les valeurs, -1 - une forte corrélation négative, et 0 - pas de corrélation du tout (les variables sont indépendantes).
 
-**Example**: We can compute correlation between weights and heights of baseball players from the dataset mentioned above:
+
+**Exemple** : Nous pouvons calculer la corrélation entre les poids et les tailles des joueurs de baseball à partir de l'ensemble de données mentionné ci-dessus :
 ```python
 print(np.corrcoef(weights,heights))
 ```
-As a result, we get **correlation matrix** like this one:
+En conséquence, nous obtenons des **matrices de corrélation** comme celle-ci :
 ```
 array([[1.        , 0.52959196],
        [0.52959196, 1.        ]])
 ```
 
-> Correlation matrix C can be computed for any number of input sequences S<sub>1</sub>, ..., S<sub>n</sub>. The value of C<sub>ij</sub> is the correlation between S<sub>i</sub> and S<sub>j</sub>, and diagonal elements are always 1 (which is also self-correlation of S<sub>i</sub>).
+> La matrice de corrélation C peut être calculée pour n'importe quel nombre de séquences d'entrée. S<sub>1</sub>, ..., S<sub>n</sub>. La valeur de C<sub>ij</sub> est la corrélation entre S<sub>i</sub> and S<sub>j</sub>, et les éléments diagonaux sont toujours égaux à 1 (ce qui correspond également à l'autocorrélation de S<sub>i</sub>).
 
-In our case, the value 0.53 indicates that there is some correlation between weight and height of a person. We can also make the scatter plot of one value against the other to see the relationship visually:
+Dans notre cas, la valeur 0,53 indique qu'il existe une certaine corrélation entre le poids et la taille d'une personne. Nous pouvons également établir un diagramme de dispersion d'une valeur par rapport à l'autre pour voir la relation visuellement :
 
 ![Relationship between weight and height](images/weight-height-relationship.png)
-
-> More examples of correlation and covariance can be found in [accompanying notebook](notebook.ipynb).
-
-## Conclusion
-
-In this section, we have learnt:
-
-* basic statistical properties of data, such as mean, variance, mode and quartiles
-* different distributions of random variables, including normal distribution
-* how to find correlation between different properties
-* how to use sound apparatus of math and statistics in order to prove some hypotheses, 
-* how to compute confidence intervals for random variable given data sample
-
-While this is definitely not exhaustive list of topics that exist within probability and statistics, it should be enough to give you a good start into this course.
 
 
 
