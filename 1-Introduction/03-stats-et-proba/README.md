@@ -99,7 +99,7 @@ La différence entre Sherlock Holmes et nous tient à ce que nous ne résolvons 
 Plus formellement, le problème que nous essayons de résoudre consiste à savoir  si **les deux distributions sont les mêmes**. Pour cela nous devons faire un test d'hypothèses. Si nous savons que les distributions sont normales, nous pouvons par exemple appliquer : 
 * le **[test t de Student](https://fr.wikipedia.org/wiki/Test_t_de_Student)**
 * le **[test de Kolmogorov-Smirnov](https://fr.wikipedia.org/wiki/Test_de_Kolmogorov-Smirnov)**
-* le khi-deux de **[Pearson](https://fr.wikipedia.org/wiki/Test_du_%CF%87%C2%B2)**
+* le khi-deux de **[Pearson](https://fr.wikipedia.org/wiki/Test_de_Student)**
 
 
 
