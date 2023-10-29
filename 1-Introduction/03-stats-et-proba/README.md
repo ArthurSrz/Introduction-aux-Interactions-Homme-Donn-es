@@ -129,48 +129,55 @@ Pourquoi, me direz-vous:
 * pourquoi ne pouvons-nous parler de grands ensembles qu'avec des probabilités ? 
 * pouquoi ne pouvons-nous pas être certain, par exemple, que tous les hommes sont plus grands que les femmes ? 
 
-Tout simplement car personne ne pourra jamais mesurer TOUS les hommes et TOUTES les femmes. De fait, nous ne pourrons jamais être certain à 100% de cette différence.
+Tout simplement car personne ne pourra jamais mesurer TOUS les hommes et TOUTES les femmes. De fait, nous ne pourrons jamais être certain à 100% de cette différence.Les statistiques nous permettent de nous rapprocher de ces certitudes sans jamais les atteindre, et ce, grâce aux probabilités. 
 
-Les statistiques nous permettent de nous rapprocher de ces certitudes sans jamais les atteindre, et ce, grâce aux probabilités. 
+Dans notre exemple, nous avons récupéré des données (restreinte) sur les prix de l'immobilier autour de chez vous et autour de chez vos parents. Il faut considérer ces mesures comme deux **échantillons** de deux plus grands ensembles appelés aussi **populations** : 
+* l'ensemble de tous les prix de l'immobilier autour de chez vous
+* l'ensemble de tous les prix de l'immobilier autour de chez vos parents
 
-
-When we talk about weights of baseball players, we assume that there is certain **random variable W** that corresponds to ideal probability distribution of weights of all baseball players (so-called **population**). Our sequence of weights corresponds to a subset of all baseball players that we call **sample**. An interesting question is, can we know the parameters of distribution of W, i.e. mean and variance of the population?
-
-The easiest answer would be to calculate mean and variance of our sample. However, it could happen that our random sample does not accurately represent complete population. Thus it makes sense to talk about **confidence interval**.
-
-> **Confidence interval** is the estimation of true mean of the population given our sample, which is accurate is a certain probability (or **level of confidence**).
-
-
-Suppose we have a sample X<sub>1</sub>, ..., X<sub>n</sub> from our distribution. Each time we draw a sample from our distribution, we would end up with different mean value &mu;. Thus &mu; can be considered to be a random variable. A **confidence interval** with confidence p is a pair of values (L<sub>p</sub>,R<sub>p</sub>), such that **P**(L<sub>p</sub>&leq;&mu;&leq;R<sub>p</sub>) = p, i.e. a probability of measured mean value falling within the interval equals to p.
+La question à pose alors est : dans quelle mesure ces échantillons sont-ils représentatifs des plus grands ensembles ? Nous pourrions avoir de la chance et tomber sur des échantillons qui représentent exactement la diversité des prix de l'immobilier. Mais ceci est peu réaliste. Le plus probable est que nos échantillons ne représentent qu'une partie de la diversité des prix de l'immobilier. Les échantillons sont représentatifs de la population **dans certaines mesures** : les intervalles de confiance.
 
 
 ### Etape 2 : calculer des intervalles de confiance pour une variable
 
-> It does beyond our short intro to discuss in detail how those confidence intervals are calculated. Some more details can be found [on Wikipedia](https://en.wikipedia.org/wiki/Confidence_interval). In short, we define the distribution of computed sample mean relative to the true mean of the population, which is called **student distribution**.
+Une définition officielle d'un intervalle de confiance : 
 
-If we want to estimate the mean &mu; of our population with confidence p, we need to take *(1-p)/2-th percentile* of a Student distribution A, which can either be taken from tables, or computer using some built-in functions of statistical software (eg. Python, R, etc.). Then the interval for &mu; would be given by X&pm;A*D/&radic;n, where X is the obtained mean of the sample, D is the standard deviation.
+> **L'intervalle de confiance** est l'estimation de la véritable moyenne de la population à partir de notre échantillon, qui est exacte avec une certaine probabilité (ou **niveau de confiance**).
 
-> **Note**: We also omit the discussion of an important concept of [degrees of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)), which is important in relation to Student distribution. You can refer to more complete books on statistics to understand this concept deeper.
+Supposons que nous ayons un échantillon X<sub>1</sub>, ..., X<sub>n</sub> de notre distribution. Chaque fois que nous tirons un échantillon de notre distribution, nous obtenons une valeur moyenne différente &mu; ; &mu; peut donc être considérée comme une variable aléatoire. Un **intervalle de confiance** avec un niveau de confiance p est une paire de valeurs (L<sub>p</sub>,R<sub>p</sub>), telle que **P**(L<sub>p</sub>&leq;&mu;&leq;R<sub>p</sub>) = p, c'est-à-dire que la probabilité que la valeur moyenne mesurée tombe dans l'intervalle est égale à p.
 
-An example of calculating confidence interval for weights and heights is given in the [accompanying notebooks](notebook.ipynb).
+> **Anecdote**
+> On appelle **student distribution** (d'où le nom de test t de Student) la distribution de la moyenne &mu; tirée de l'échantillon par rapport à la moyenne &mu; de la population. 
 
-| p | Weight mean |
+Par exemple, mettons que nous calculions la prix moyen (en k euros) des logements. A partir d'un échantillon nous aurions pu calculer les intervelles de confiance suivant :
+
+| p | Moyenne (prix en k euros) |
 |-----|-----------|
 | 0.85 | 201.73±0.94 |
 | 0.90 | 201.73±1.08 |
 | 0.95 | 201.73±1.28 |
 
-Notice that the higher is the confidence probability, the wider is the confidence interval. 
+Ce tableau se lit de la manière suivante : d'après notre échantillon, la moyenne des prix des logements est de 201.73 k€. Or, du fait de notre échantillon, nous ne pouvons pas être sûrs à 100% que c'est la vraie moyenne. Nous pouvons seulement dire que la vraie moyenne est probablement proche de 201.73 livres. Pour être plus précis, nous pouvons dire que : 
+- la probabilité que la vraie moyenne soit comprise entre 201.73-0.94 k€ et 201.73+0.94 k€ est de 85%
+- la probabilité que la vraie moyenne soit comprise entre 201.73-1.08 k€ et 201.73+1.08 k€ est de 90%
+- la probabilité que la vraie moyenne soit comprise entre 201.73-1.28 k€ et 201.73+1.28 k€ est de 95%
 
 
-### Etape 3 : comporer les intervalles de confiance de chaque variable
+Ce raisonnement, nous pouvons l'appliquer sur chacune des variables de confiance. 
+
+
+### Etape 3 : comparer les intervalles de confiance de chaque variable
 
 
 #### Analyse visuelle
 
-However, it is not always obvious whether we can make this conclusion. From the discussion above we know that each mean has an associated confidence interval, and thus this difference can just be a statistical error. We need some more formal way to test our hypothesis.
+Une première approche ici pourrait être de visualiser sur un même graphique les distributions des valeurs moyennes propres à chaque échantillon. 
 
-Let's compute confidence intervals separately for heights of first and second basemen:
+Pour savoir si les deux distributions sont différentes, nous pourrions regarder sur le graphique si le centre des deux distributions (qui, soit dit en passant représentent les intervalles de confiance les plus élevés) se chevauchent. 
+
+Si elles ne se chevauchent pas, nous pourrions dire que les deux distributions sont différentes et donc que les prix de l'immobilier autour de chez vous sont différents de ceux autour de chez vos parents. La position relative des deux distributions permettra ensuite d'affirmer si les prix sont plus élevés ou plus bas autour de chez vous.
+
+
 
 | Confidence | First Basemen | Second Basemen |
 |------------|---------------|----------------|
@@ -182,11 +189,13 @@ We can see that under no confidence the intervals overlap. That proves our hypot
 
 #### Analyse numérique 
 
-In Student t-test, we compute so-called **t-value**, which indicates the difference between means, taking into account the variance. It is demonstrated that t-value follows **student distribution**, which allows us to get the threshold value for a given confidence level **p** (this can be computed, or looked up in the numerical tables). We then compare t-value to this threshold to approve or reject the hypothesis.
+Nous pouvons aussi effectuer une analyse numérique qui consiste à calculer ce que l'on appelle la **valeur-t**, qui indique la différence entre les moyennes avec un niveau de confiance donné : la célèbre **p-value** (vous avez peut être déjà entendu des amoureux des chiffres débattre d'un résultat et poser la question : "ok mais quelle p-value ?"). Cette **p-value** mesure la probabilité que la différence entre deux distributions soit du à du pur hasard statistique. Plus cette **p-value** est basse, plus il est probable que les distributions soient réellement différentes.
 
-In Python, we can use the **SciPy** package, which includes `ttest_ind` function (in addition to many other useful statistical functions!). It computes the t-value for us, and also does the reverse lookup of confidence p-value, so that we can just look at the confidence to draw the conclusion.
+Avec cette analyse nous pouvons donc établir dans quelle proportion les deux variables sont différentes avec le niveau de confiance que nous pouvons accorder à cette différence calculée. 
 
-For example, our comparison between heights of first and second basemen give us the following results: 
+En Python, nous pouvons utiliser le paquet **SciPy**, qui comprend la fonction `ttest_ind` (en plus de nombreuses autres fonctions statistiques utiles !). Elle calcule la valeur t pour nous, et fait également la recherche inverse de la valeur p de confiance, de sorte que nous pouvons simplement regarder la confiance pour tirer la conclusion.
+
+Un exemple de code qui fait très rapidement le calcul :
 ```python
 from scipy.stats import ttest_ind
 
@@ -197,22 +206,11 @@ print(f"T-value = {tval[0]:.2f}\nP-value: {pval[0]}")
 T-value = 7.65
 P-value: 9.137321189738925e-12
 ```
-In our case, p-value is very low, meaning that there is strong evidence supporting that first basemen are taller.
 
-There are also different other types of hypothesis that we might want to test, for example:
-* To prove that a given sample follows some distribution. In our case we have assumed that heights are normally distributed, but that needs formal statistical verification. 
-* To prove that a mean value of a sample corresponds to some predefined value
-* To compare means of a number of samples (eg. what is the difference in happiness levels among different age groups)
+La p-value est très faible, ce qui signifie qu'il y a de fortes chances que les deux distributions soient ici différentes.
 
 
 
-## Law of Large Numbers and Central Limit Theorem
-
-One of the reasons why normal distribution is so important is so-called **central limit theorem**. Suppose we have a large sample of independent N values X<sub>1</sub>, ..., X<sub>N</sub>, sampled from any distribution with mean &mu; and variance &sigma;<sup>2</sup>. Then, for sufficiently large N (in other words, when N&rarr;&infin;), the mean &Sigma;<sub>i</sub>X<sub>i</sub> would be normally distributed, with mean &mu; and variance &sigma;<sup>2</sup>/N.
-
-> Another way to interpret the central limit theorem is to say that regardless of distribution, when you compute the mean of a sum of any random variable values you end up with normal distribution. 
-
-From the central limit theorem it also follows that, when N&rarr;&infin;, the probability of the sample mean to be equal to &mu; becomes 1. This is known as **the law of large numbers**.
 
 ## Covariance and Correlation
 
