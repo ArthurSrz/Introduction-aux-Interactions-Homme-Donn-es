@@ -1,4 +1,4 @@
-# Visualizing Quantities
+# Visualiser des quantités
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/09-Visualizing-Quantities.png)|
 |:---:|
