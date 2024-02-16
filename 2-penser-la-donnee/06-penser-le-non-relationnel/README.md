@@ -1,4 +1,11 @@
-# Pourquoi des données non relationnelles ? 
+# Pourquoi des données non-relationnelles ? 
+
+Il faut considérer de travailler avec des données non-relationnelles quand vous savez que la réalité sous-jacente aux données ne peut être décrite avec une rigueur stricte : 
+
+* soit que le phénomène sous-jacent est trop complexe pour rentrer dans un schéma relationnel
+* soit qu'il est trop dynamique ou évolutif pour rentrer dans le cadre relationnel figé 
+
+A mon sens, hormi pour des projets d'études sur des données historiques, la plupart des projets de données devraient commencer par une approche non-relationnelle.
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](https://github.com/ArthurSrz/La-Data-Science-Par-Un-Nul/blob/main/sketchnotes/06-NoSQL.png?raw=true)|
 |:---:|
