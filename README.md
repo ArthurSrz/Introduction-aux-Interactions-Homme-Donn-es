@@ -32,12 +32,12 @@ Lisez en diagonale, en transversale mais surtout **ne lisez pas comme un bon él
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](./sketchnotes/00-Roadmap.png)|
 |:---:|
-| Data Science par un Nul: Feuille de route - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
+| Interactions Homme-Données: Feuille de route - _Sketchnote by [@nitya](https://twitter.com/nitya)_ |
 
 
 | Numéro de la leçon | Sujet | Bloc | Objectifs d'apprentissage | Lien vers le cours | Auteurs |
 | :-----------: | :----------------------------------------: | :--------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | :----: |
-| 01 | WTF Data Science ? | [Introduction](1-Introduction/README.md) | Les bases de la data science, pour les nuls, par un nul | [leçon](1-Introduction/01-defining-data-science/README.md) [video](https://youtu.be/beZ7Mb_oz9I) | [Dmitry](http://soshnikov.com), [Arthur](https://twitter.com/SrzArthur) |
+| 01 | WTF Data Science ? | [Introduction](1-Introduction/README.md) | Les bases | [leçon](1-Introduction/01-defining-data-science/README.md) [video](https://youtu.be/beZ7Mb_oz9I) | [Dmitry](http://soshnikov.com), [Arthur](https://twitter.com/SrzArthur) |
 | 02 | Penser la donnée | [Introduction](2-penser-la-donnee/README.md) | Être capable de modéliser le monde en données | [Penser le relationnel](2-penser-la-donnee/05-penser-le-relationnel/README.md), [Penser le non-relationnel](2-penser-la-donnee/06-penser-le-non-relationnel/README.md) | [Jasmine](https://www.twitter.com/paladique), [Arthur](https://twitter.com/SrzArthur) |
 | 03 | Réaliser les données | [Introduction](3-realiser-les-donnees/README.md) | (chargement...) | [...]()| [Dmitry](http://soshnikov.com), [Arthur](https://twitter.com/SrzArthur) |
 | 04 | Remodeler sa pensée avec les données | [Introduction](4-Remodeler-sa-Pensée-avec-les-Données/README.md) | (chargement..) | [...]() | [Christopher](https://www.twitter.com/geektrainer), [Arthur](https://twitter.com/SrzArthur) | | |
