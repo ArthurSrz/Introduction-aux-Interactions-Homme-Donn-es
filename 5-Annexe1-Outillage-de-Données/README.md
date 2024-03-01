@@ -1,4 +1,4 @@
-# Data Science in the Cloud
+# Outillage de données
 
 ![cloud-picture](images/cloud-picture.jpg)
 

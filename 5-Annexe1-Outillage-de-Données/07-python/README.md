@@ -1,4 +1,4 @@
-# Working with Data: Python and the Pandas Library
+# Travailler avec Python et la librairie pandas
 
 | ![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](https://github.com/ArthurSrz/La-Data-Science-Par-Un-Nul/blob/main/sketchnotes/07-WorkWithPython.png?raw=true) |
 | :-------------------------------------------------------------------------------------------------------: |

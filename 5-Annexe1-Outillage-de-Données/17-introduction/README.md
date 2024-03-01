@@ -1,4 +1,4 @@
-# Introduction to Data Science in the Cloud
+# Introduction à l'outilllage des données
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/17-DataScience-Cloud.png)|
 |:---:|
