@@ -1,11 +1,5 @@
-# Data Science in the Wild
+# Tambouille de Données
 
-Real-world applications of data science across industries.
+1. [Faire sa cuisine avec les données](08-cuisine-de-donnees/README.md)
+2. [La science des données dans la vraie vie](20-vraie-vie-des-donnees/README.md)
 
-### Topics
-
-1. [Data Science in the Real World](20-Real-World-Examples/README.md)
-
-### Credits
-
-Written with ❤️ by [Nitya Narasimhan](https://twitter.com/nitya)
